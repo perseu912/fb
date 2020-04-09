@@ -1,0 +1,55 @@
+body {
+    font-size: 15pt;
+}
+h2{
+  font-family: "Roboto";
+  font-weight: bolder;
+  
+}
+p{
+  font-size: 70%;
+  font-family: "Roboto";
+}
+.painel{
+  text-align: center;
+}
+input{
+  font-size: 70%;
+  padding: 3% 1.5%;
+  margin: 1%;
+  border:0;
+  border-radius: 4px;
+}
+.faceButton{
+  font-size: 70%;
+  margin:0;
+  border:0;
+  border-radius:4px;
+  padding: 2%;
+  background-color:DodgerBlue; 
+}
+.instaButton{
+  margin:0;
+  border: 2px;
+  padding:2%;
+  background-image: linear-gradient(45deg,DeepPink,DarkViolet);
+}
+.loginFace{
+  margin:0;
+  font-size: 70%;
+  border:0;
+  border-radius:4px;
+  padding: 2% 5%;
+  background-color:DodgerBlue;
+}
+.loginInsta{
+  margin:0;
+  font-size: 70%;
+  border:2px;
+  padding: 2% 5%;
+  background-image: linear-gradient(45deg,DeepPink,DarkViolet);
+}
+.load{
+  height: 50;
+  width: 50;
+}
