@@ -14,3 +14,6 @@ def log(input):
 		print('log offline')
 	
 #log('test')
+
+
+#timeExcept
